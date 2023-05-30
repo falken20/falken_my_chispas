@@ -1,0 +1,5 @@
+pytest
+coverage
+mock
+flake8
+autopep8

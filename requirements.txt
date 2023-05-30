@@ -1,0 +1,12 @@
+
+python-dotenv
+rich>=11.2.0
+
+
+Flask
+requests
+gunicorn  # Neccesary for app.yaml
+pydantic # Neccesary for config.py
+flask-sqlalchemy
+psycopg2-binary
+flask-login
