@@ -14,21 +14,7 @@ __url_twitter__ = 'https://twitter.com/richionline'
 __url_linkedin__ = 'https://www.linkedin.com/in/richionline/'
 __license__ = 'MIT License'
 __copyright__ = '© 2023 by Richi Rod AKA @richionline / falken20'
-__features__ = [
-]
-
-
-SETUP_DATA = {
-    'title': __title__,
-    'version': __version__,
-    'author': __author__,
-    'url_github': __url_github__,
-    'url_twitter': __url_twitter__,
-    'url_linkedin': __url_linkedin__,
-    'license': __license__,
-    'copyrigth': __copyright__,
-    'features': __features__,
-}
+__features__ = []
 
 
 class Settings(BaseSettings):
@@ -36,7 +22,18 @@ class Settings(BaseSettings):
     # find the corresponding environment variables.
     env_name: str = "Local"
     base_url: str = "http://localhost:5000"
-    # db_url: str = "sqlite:///./shortener.db"
+    secret_key: str = "your-secret-key"
+    SETUP_DATA: dict = {
+        'title': __title__,
+        'version': __version__,
+        'author': __author__,
+        'url_github': __url_github__,
+        'url_twitter': __url_twitter__,
+        'url_linkedin': __url_linkedin__,
+        'license': __license__,
+        'copyrigth': __copyright__,
+        'features': __features__,
+    }
 
     class Config:
         # When you add the Config class with the path to your env_file to your
