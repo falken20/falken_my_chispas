@@ -22,7 +22,6 @@ class Settings(BaseSettings):
     # find the corresponding environment variables.
     env_name: str = "Local"
     base_url: str = "http://localhost:5000"
-    secret_key: str = "your-secret-key"
     SETUP_DATA: dict = {
         'title': __title__,
         'version': __version__,
@@ -34,11 +33,14 @@ class Settings(BaseSettings):
         'copyrigth': __copyright__,
         'features': __features__,
     }
+    ENV_PRO: str = "N"
+    LEVEL_LOG: list = []
+    SECRET_KEY: str = "my-secret-key"
 
     class Config:
         # When you add the Config class with the path to your env_file to your
         # settings, pydantic loads your environment variables from the .env file.
-        env_file = ".env"
+        env_file = "../.env"
         env_file_encoding = 'utf-8'
 
 
