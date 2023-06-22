@@ -36,6 +36,8 @@ class Settings(BaseSettings):
     ENV_PRO: str = "N"
     LEVEL_LOG: list = []
     SECRET_KEY: str = "my-secret-key"
+    RENAULT_USER: str = "renault-user"
+    RENAULT_PASSWORD: str = "renault-password"
 
     class Config:
         # When you add the Config class with the path to your env_file to your

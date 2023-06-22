@@ -7,3 +7,5 @@ pydantic # Neccesary for config.py
 flask-login
 #flask-sqlalchemy
 #psycopg2-binary # PostgreSQL database adapter
+
+renault-api-lite # https://github.com/bkogler/renault-api-lite/tree/main
