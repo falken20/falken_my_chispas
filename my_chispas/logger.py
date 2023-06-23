@@ -62,7 +62,7 @@ class Log():
             Log.error("Error to print log", err, sys)
 
     @staticmethod
-    def error(message, err, sys, style=style_ERROR):
+    def error(message, err, sys=sys, style=style_ERROR):
         """
         Print error in terminal
         Args:

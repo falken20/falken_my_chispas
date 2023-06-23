@@ -45,9 +45,12 @@ coverage run -m pytest -v && coverage html --omit=*/venv/*,*/tests/*
 
 ##### Environment vars
 ```bash
-FALKEN_VERSION = "1.0.0"
-ENV_PRO = N
-LEVEL_LOG = ["DEBUG", "INFO", "WARNING", "ERROR"]
+ENV_PRO=N
+LEVEL_LOG=["DEBUG", "INFO", "WARNING", "ERROR"]
+SECRET_KEY=enwodoewidweoidoweijdopiwejdoewi 
+RENAULT_USER=
+RENAULT_PASSWORD=
+RENAULT_VIN=
 ```
 
 ---

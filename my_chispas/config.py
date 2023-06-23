@@ -34,10 +34,11 @@ class Settings(BaseSettings):
         'features': __features__,
     }
     ENV_PRO: str = "N"
-    LEVEL_LOG: list = []
+    LEVEL_LOG: list = ["INFO", "WARNING", "ERROR"]
     SECRET_KEY: str = "my-secret-key"
     RENAULT_USER: str = "renault-user"
     RENAULT_PASSWORD: str = "renault-password"
+    RENAULT_VIN: str = "renault-vin"
 
     class Config:
         # When you add the Config class with the path to your env_file to your
