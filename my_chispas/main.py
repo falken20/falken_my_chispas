@@ -56,7 +56,7 @@ async def main():
             Log.info(f"4. Getting vehicle data for VIN {vin}")
             try:
                 vehicle = await account_data.get_api_vehicle(vin)
-                Log.debug(await vehicle.get_notification_settings())
+                Log.debug(await vehicle.get_lock_status())
                 # Log.debug(f"Cockpit information: {await vehicle.get_cockpit()}")
                 # Log.info(f"Battery status information: {await vehicle.get_battery_status()}")
             except Exception as err:
